@@ -12,6 +12,8 @@
 // SUB - Take two integer prams and subtract them           2 - X, Y                3
 // RET - Returns the value of a variable                    1 - Title               4
 // EXT - Exit program                                       1 - Value               5
+// JMP - Moves the program back to a specific line          1 - line               6
+
 
 //ASCII code numbers
 // 'space'      32
@@ -457,6 +459,13 @@ void execute(char* fname)
                 }
                 
                 printf("Variable %.*s has value %i\n",u,tmp2,x);                
+            }
+            
+            //************ JMP *************
+
+            else if (op_code == 5)
+            {
+                
             }
             
             //************ EXIT ************
